@@ -1,14 +1,14 @@
 import csv
 from collections import defaultdict
-from book import Book, fetch_book_details
+from books import Book, fetch_book_details
 
 MAX_BORROWED_BOOKS = 3
 BOOKS_CSV_FILE = "books.csv"
 
 class Library:
     def __init__(self):
-        self.books = {}  # title -> Book instance
-        self.borrowed_books = {}  # title -> member
+        self.books = {}
+        self.borrowed_books = {}
         self.borrow_count = defaultdict(int)
         self.load_books_from_csv()
 
