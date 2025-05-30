@@ -1,5 +1,3 @@
-# library.py
-
 import csv
 from collections import defaultdict
 from book import Book, fetch_book_details
